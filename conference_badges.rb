@@ -7,11 +7,10 @@ def batch_badge_creator(group)
 end
 
 def assign_rooms(speaker_list)
-  room_assignments = []
   speaker_list.each_with_index.map do |speaker, index|
-    room_assignments << "Hello, #{speaker}! You'll be assigned to room #{index+1}!"
+    "Hello, #{speaker}! You'll be assigned to room #{index+1}!"
   end
-  room_assignments
+  
 end
 
 def printer(attendees)
